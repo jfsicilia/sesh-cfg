@@ -1,0 +1,109 @@
+blacklist = ["scratch"]
+cache = true
+
+[[session]]
+name = "Downloads 📥"
+path = "~/inbox/downloads"
+startup_command = "yazi"
+preview_command = "lsd --icon=always --color=always {}"
+
+[[session]]
+name = "bin"
+path = "~/bin"
+startup_command = """
+                    dev-layout &&
+                    nvim -c 'lua vim.schedule(function() require(\"telescope.builtin\").find_files() end)'
+                  """
+preview_command = "lsd --tree --icon=always --color=always {}"
+
+[[session]]
+name = "atuin-cfg"
+path = "~/settings/linux/dotfiles/atuin-cfg"
+startup_command = "dev-layout && nvim config.toml"
+preview_command = "bat --color=always {}/config.toml"
+
+[[session]]
+name = "espanso-cfg"
+path = "~/settings/linux/dotfiles/espanso-cfg"
+startup_command = """
+                    dev-layout &&
+                    nvim -c 'lua vim.schedule(function() require(\"telescope.builtin\").find_files() end)'
+                  """
+preview_command = "lsd --tree --icon=always --color=always {}"
+
+[[session]]
+name = "foot-cfg"
+path = "~/settings/linux/dotfiles/foot-cfg"
+startup_command = "dev-layout && nvim foot.ini"
+preview_command = "bat --color=always {}/foot.ini"
+
+[[session]]
+name = "ohmyposh-cfg"
+path = "~/settings/linux/dotfiles/ohmyposh-cfg"
+startup_command = "dev-layout && nvim config.toml"
+preview_command = "bat --color=always {}/config.toml"
+
+[[session]]
+name = "nvim-cfg"
+path = "~/settings/linux/dotfiles/nvim-cfg"
+startup_command = """
+                    dev-layout &&
+                    nvim -c 'lua vim.schedule(function() require(\"telescope.builtin\").find_files() end)'
+                  """
+preview_command = "lsd --tree --icon=always --color=always {}"
+
+[[session]]
+name = "rofi-cfg"
+path = "~/settings/linux/dotfiles/rofi-cfg"
+startup_command = "dev-layout && nvim config.rasi"
+preview_command = "bat --color=always {}/config.rasi"
+
+[[session]]
+name = "ssh-cfg"
+path = "~/settings/linux/dotfiles/ssh-cfg"
+startup_command = """
+                    dev-layout &&
+                    nvim -c 'lua vim.schedule(function() require(\"telescope.builtin\").find_files() end)'
+                  """
+preview_command = "lsd --tree --icon=always --color=always {}"
+
+[[session]]
+name = "sesh-cfg"
+path = "~/settings/linux/dotfiles/sesh-cfg"
+startup_command = "dev-layout && nvim sesh.toml"
+preview_command = "bat --color=always {}/sesh.toml"
+
+[[session]]
+name = "tealdeer-cfg"
+path = "~/settings/linux/dotfiles/tealdeer-cfg"
+startup_command = "dev-layout && nvim config.toml"
+preview_command = "bat --color=always {}/config.toml"
+
+[[session]]
+name = "tmux-cfg"
+path = "~/settings/linux/dotfiles/tmux-cfg"
+startup_command = "dev-layout && nvim tmux.conf"
+preview_command = "bat --color=always {}/tmux.conf"
+
+[[session]]
+name = "workmux-cfg"
+path = "~/settings/linux/dotfiles/workmux-cfg"
+startup_command = "dev-layout && nvim config.yaml"
+preview_command = "bat --color=always {}/config.yaml"
+
+[[session]]
+name = "yazi-cfg"
+path = "~/settings/linux/dotfiles/yazi-cfg"
+startup_command = """
+                    dev-layout &&
+                    nvim -c 'lua vim.schedule(function() require(\"telescope.builtin\").find_files() end)'
+                  """
+preview_command = "lsd --tree --icon=always --color=always {}"
+
+[[session]]
+name = "zshrc-cfg"
+path = "~/settings/linux/dotfiles/zsh-cfg"
+startup_command = "dev-layout && nvim .zshrc"
+preview_command = "bat --color=always {}/.zshrc"
+
+
