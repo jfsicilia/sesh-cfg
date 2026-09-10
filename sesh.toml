@@ -8,6 +8,12 @@ startup_command = "yazi"
 preview_command = "lsd --icon=always --color=always {}"
 
 [[session]]
+name = "gita"
+path = "~"
+startup_command = "fzfgita"
+preview_command = "gita ll"
+
+[[session]]
 name = "bin"
 path = "~/bin"
 startup_command = """
