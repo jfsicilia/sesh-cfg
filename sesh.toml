@@ -14,6 +14,12 @@ startup_command = "fzfgita"
 preview_command = "gita ll"
 
 [[session]]
+name = "misc"
+path = "~"
+startup_command = "dev-layout"
+preview_command = "lsd --tree --icon=always --color=always {}"
+
+[[session]]
 name = "bin"
 path = "~/bin"
 startup_command = """
